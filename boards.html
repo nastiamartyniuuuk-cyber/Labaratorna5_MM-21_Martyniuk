@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Water Adventure — SUP-борди</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="top-nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" class="logo-img"><span>Water Adventure</span>
+      </div>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="boards.html" class="active">SUP-борди</a>
+        <a href="equipment.html">Екіпірування</a>
+        <a href="routes.html">Маршрути</a>
+        <a href="about.html">Про нас</a>
+        <a href="reviews.html">Відгуки</a>
+      </nav>
+    </header>
+
+    <section class="page-banner" style="background:url('images/sup-banner.webp') center/cover no-repeat;">
+      <div class="overlay">
+        <h1>Дошки для нових горизонтів</h1>
+      </div>
+    </section>
+
+    <main class="container">
+  <section class="main card fade-in-up">
+    <h2>Дошки для нових горизонтів</h2>
+
+    <!-- велика картинка типів SUP по центру -->
+    <div class="equip-img" style="text-align:center; margin-top:12px;">
+      <img src="images/sup-types.png" alt="Види SUP" style="max-width:640px; width:100%; margin:0 auto;">
+    </div>
+
+    <!-- три види в рядку під картинкою -->
+    <div class="cards" style="margin-top:18px;">
+      <div class="card">
+        <h4>Турингові</h4>
+        <p>Довгі й вузькі — для далеких маршрутів і кращої курсивності.</p>
+        <button class="btn-neo" data-action="toast" data-message="Додано турингову дошку">Додати</button>
+      </div>
+      <div class="card">
+        <h4>Надувні</h4>
+        <p>Легкі та компактні — зручні для транспортування та зберігання.</p>
+        <button class="btn-neo" data-action="toast" data-message="Додано надувну дошку">Додати</button>
+      </div>
+      <div class="card">
+        <h4>Для серфінгу</h4>
+        <p>Короткі й маневрені — для хвиль і трюків.</p>
+        <button class="btn-neo" data-action="toast" data-message="Додано серф-дошку">Додати</button>
+      </div>
+    </div>
+  </section>
+
+  <aside class="aside card fade-in-up">
+    <h4>Поради</h4>
+    <p>Не забувай про рятувальний жилет та leash.</p>
+    <button class="btn-neo" data-action="toggle-desc" data-target="#supDesc">Показати опис</button>
+    <div id="supDesc" class="hidden" style="margin-top:12px;">
+      <p class="kicker">Детальніше</p>
+      <p>SUP — це відпочинок і тренування одночасно. Рекомендуємо починати з надувної дошки та інструктора.</p>
+    </div>
+    <div style="margin-top:10px;">
+      <a href="equipment.html" class="btn">👉 Далі: Екіпірування</a>
+    </div>
+  </aside>
+
+  <footer class="footer card site-footer">
+    <p>&copy; 2025 Water Adventure | Львів, Україна</p>
+  </footer>
+</main>
+
+
+
+    <div class="lightbox" aria-hidden="true">
+      <div class="lightbox-inner">
+        <button class="close">✕</button>
+        <button class="prev">◀</button>
+        <img src="" alt="preview">
+        <button class="next">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

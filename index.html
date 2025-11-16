@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Water Adventure — Головна</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="top-nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="Water Adventure logo" class="logo-img">
+        <span>Water Adventure</span>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Головна</a>
+        <a href="boards.html">SUP-борди</a>
+        <a href="equipment.html">Екіпірування</a>
+        <a href="routes.html">Маршрути</a>
+        <a href="about.html">Про нас</a>
+        <a href="reviews.html">Відгуки</a>
+      </nav>
+    </header>
+
+    <section class="hero" style="background:url('images/banner.jpg') center/cover no-repeat;">
+      <div class="hero-text fade-in-up">
+        <h1>Відчуй свободу на хвилях</h1>
+        <p>Пригоди, природа та новий стиль життя з SUP-бордом</p>
+        <div class="controls">
+          <a href="boards.html" class="btn">Дізнатися більше</a>
+          <button class="btn-neo btn-fav" aria-haspopup="dialog">❤ Улюблені</button>
+          <button class="btn-neo" data-action="theme-toggle">🎨 Тема</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="header-card card fade-in-up">
+        <h2>Ласкаво просимо у Water Adventure!</h2>
+        <p>Це простір для тих, хто мріє про відпочинок на воді, нові маршрути та гармонію з природою. Ми зібрали все про SUP-борди: від видів і екіпірування до популярних місць в Україні.</p>
+      </section>
+
+      <section class="main card fade-in-up">
+        <h3 class="kicker">Про сайт</h3>
+        <p>Water Adventure — це демонстраційний сайт з інформацією про SUP-борди, екіпірування та маршрути.</p>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>Галерея</h3>
+          <p class="kicker">Натисніть на фото, щоб відкрити в повному розмірі і гортати.</p>
+          <div class="gallery-grid">
+            <img src="images/travel1.webp" alt="SUP мандрівка 1" data-large="images/travel1.webp">
+            <img src="images/travel2.webp" alt="SUP мандрівка 2" data-large="images/travel2.webp">
+            <img src="images/travel3.webp" alt="SUP мандрівка 3" data-large="images/travel3.webp">
+            <img src="images/travel4.webp" alt="SUP мандрівка 4" data-large="images/travel4.webp">
+          </div>
+        </div>
+      </section>
+
+      <aside class="aside card fade-in-up">
+        <h4>Контакти</h4>
+        <p>📧 info@wateradventure.com<br>📍 Львів, Україна</p>
+        <button class="btn-neo" data-action="toggle-desc" data-target="#more-info">Показати опис</button>
+        <div id="more-info" class="hidden more-info" style="margin-top:12px;">
+          <p class="kicker">Детальніше</p>
+          <p>Ми організовуємо SUP-прогулянки, тренінги та прокат спорядження. Бронювання за телефоном або у соцмережах.</p>
+        </div>
+      </aside>
+
+      <footer class="footer card site-footer">
+        <p>&copy; 2025 Water Adventure | Львів, Україна</p>
+      </footer>
+    </main>
+
+    <!-- ✅ Виправлене модальне вікно (Улюблені) -->
+    <div id="fav-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="fav-title">
+      <div class="modal">
+        <h2 id="fav-title">💙 Ми раді, що ви обрали нас!</h2>
+        <p>Щоб забронювати тур або взяти спорядження в прокат — звертайтесь за телефоном або пишіть нам у соцмережі.</p>
+        <ul class="contact-list">
+          <li>📞 +38 (0123) 456-78-90</li>
+          <li>📧 info@wateradventure.com</li>
+          <li>🔗 @water_adventure (Instagram / Facebook)</li>
+        </ul>
+        <div class="modal-actions">
+          <button class="btn" id="fav-close">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox overlay (global) -->
+    <div class="lightbox" aria-hidden="true">
+      <div class="lightbox-inner">
+        <button class="close">✕</button>
+        <button class="prev">◀</button>
+        <img src="" alt="preview">
+        <button class="next">▶</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

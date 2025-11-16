@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Water Adventure — Маршрути</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header class="top-nav">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" class="logo-img"><span>Water Adventure</span>
+      </div>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="boards.html">SUP-борди</a>
+        <a href="equipment.html">Екіпірування</a>
+        <a href="routes.html" class="active">Маршрути</a>
+        <a href="about.html">Про нас</a>
+        <a href="reviews.html">Відгуки</a>
+      </nav>
+    </header>
+
+    <section class="page-banner" style="background:url('images/routes-banner.jpg') center/cover no-repeat;">
+      <div class="overlay">
+        <h1>Подорожі водними шляхами України</h1>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="main card fade-in-up">
+        <h2>Наші маршрути</h2>
+        <div class="cards routes-grid">
+          <div class="route-card card">
+            <img src="images/dnister.jpg" alt="Дністер" class="route-img" data-large="images/dnister.jpg">
+            <div class="route-body">
+              <h4>Дністер</h4>
+              <p>Каньйони, скелі й тиша природи — ідеальний маршрут для камерних груп.</p>
+              <button class="btn-neo" data-action="toast" data-message="Додано Дністер в план">Деталі</button>
+            </div>
+          </div>
+
+          <div class="route-card card">
+            <img src="images/dnipro.jpg" alt="Дніпро" class="route-img" data-large="images/dnipro.jpg">
+            <div class="route-body">
+              <h4>Дніпро</h4>
+              <p>Широкі води, вечірні прогулянки та заходи сонця.</p>
+              <button class="btn-neo" data-action="toast" data-message="Додано Дніпро в план">Деталі</button>
+            </div>
+          </div>
+
+          <div class="route-card card">
+            <img src="images/blacksea.jpg" alt="Чорне море" class="route-img" data-large="images/blacksea.jpg">
+            <div class="route-body">
+              <h4>Чорне море</h4>
+              <p>SUP-серфінг і світанки на хвилях — для тих, хто любить драйв.</p>
+              <button class="btn-neo" data-action="toast" data-message="Додано Чорне море в план">Деталі</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="aside card fade-in-up">
+        <h4>Мапа маршрутів</h4>
+        <img src="images/map.png" alt="Мапа" class="responsive-img" data-large="images/map.png">
+      </aside>
+
+      <footer class="footer card site-footer">
+        <p>&copy; 2025 Water Adventure | Львів, Україна</p>
+      </footer>
+    </main>
+
+    <div class="lightbox" aria-hidden="true">
+      <div class="lightbox-inner">
+        <button class="close">✕</button>
+        <button class="prev">◀</button>
+        <img src="" alt="preview">
+        <button class="next">▶</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
